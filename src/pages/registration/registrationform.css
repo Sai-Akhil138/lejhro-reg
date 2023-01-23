@@ -23,7 +23,7 @@ a.logo > img {
 }
 
 .form-title {
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   margin-bottom: 24px;
   font-weight: 400;
 }
@@ -34,7 +34,7 @@ form {
 }
 
 form > h3 {
-  font-size: 30px;
+  font-size: 26px;
   line-height: 32px;
   font-weight: 500;
   margin-bottom: 20px;
