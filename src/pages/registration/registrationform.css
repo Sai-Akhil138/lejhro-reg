@@ -61,13 +61,14 @@ form > h3 {
   box-shadow: rgba(67, 67, 70, 0.39) 0px 2px 5px 0px;
 }
 
-button.form-submit {
+a.form-submit {
   border: none;
   outline: none;
   width: 140px;
-  padding: 10px 8px;
+  padding: 8px 14px;
   background: #286090;
   border-radius: 4px;
   color: #ffffff;
   cursor: pointer;
+  text-decoration: none;
 }

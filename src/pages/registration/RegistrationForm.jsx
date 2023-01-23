@@ -89,9 +89,13 @@ const RegistrationForm = () => {
           <label>Collection Last Date</label>
           <input type="date" name="collectionLastDate" id="" />
         </div>
-        <button type="submit" className="form-submit">
+        <a
+          href="/lejhro-reg/src/pages/registration/RegistrationDetails.jsx"
+          type="submit"
+          className="form-submit"
+        >
           Submit Form
-        </button>
+        </a>
       </form>
     </div>
   );
