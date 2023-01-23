@@ -2,22 +2,25 @@ import React from "react";
 import "./registrationform.css";
 import { useState } from "react";
 
+import Logo from "../../images/lejhro_logo_blue.png";
+
 const RegistrationForm = () => {
   const [customerId, setCustomerId] = useState("");
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log("Form Submitted");
-    console.log(customerId);
   };
 
   return (
     <div className="form-wrapper">
+      <a href="/" className="logo">
+        <img src={Logo} alt="Logo" />
+      </a>
       <h2 className="form-title">eNACH Registration Form</h2>
       <form action="#" onSubmit={handleSubmit}>
         <h3>Customer Information</h3>
         <div className="input-box">
-          <label htmlFor="">Customer ID(Loan Reference No.)</label>
+          <label htmlFor="">Customer ID</label>
           <input
             type="text"
             name="customerId"
@@ -33,11 +36,11 @@ const RegistrationForm = () => {
         </div>
         <div className="input-box">
           <label htmlFor="">Email ID (Optional)</label>
-          <input type="text" name="emailId" id="" />
+          <input type="email" name="emailId" id="" />
         </div>
         <div className="input-box">
           <label htmlFor="">Mobile Number</label>
-          <input type="text" name="mobileNumber" id="" required />
+          <input type="number" name="mobileNumber" id="" required />
         </div>
 
         <h3>Mandate Information</h3>
@@ -62,18 +65,11 @@ const RegistrationForm = () => {
         </div>
         <div className="input-box">
           <label htmlFor="">EMI Amount</label>
-          <input type="text" name="emiAmount" id="" required />
+          <input type="number" name="emiAmount" id="" required />
         </div>
         <div className="input-box">
           <label>Number of EMI</label>
-          <select name="selectedEMINoType">
-            <option value="selectfrequency">Select Frequency</option>
-            <option value="6">6 Months</option>
-            <option value="9">9 Months</option>
-            <option value="12">12 Months</option>
-            <option value="18">18 Months</option>
-            <option value="24">24 Months</option>
-          </select>
+          <input type="number" name="numberOfEMI" id="" />
         </div>
         <div className="input-box hidden">
           <label>Collection Frequency</label>
@@ -89,12 +85,8 @@ const RegistrationForm = () => {
           <label>Collection Last Date</label>
           <input type="date" name="collectionLastDate" id="" />
         </div>
-        <a
-          href="/lejhro-reg/src/pages/registration/RegistrationDetails.jsx"
-          type="submit"
-          className="form-submit"
-        >
-          Submit Form
+        <a href="/" type="submit" className="form-submit">
+          SUBMIT
         </a>
       </form>
     </div>
