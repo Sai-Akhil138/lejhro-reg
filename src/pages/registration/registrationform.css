@@ -31,10 +31,11 @@ form > h3 {
 .input-box {
   position: relative;
   width: 60%;
+  padding: 0 10px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 .input-box.hidden {
@@ -42,8 +43,8 @@ form > h3 {
 }
 
 .input-box label {
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: 0.9rem;
+  font-weight: 700;
   flex: 2;
 }
 
